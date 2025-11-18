@@ -24,5 +24,3 @@ for i in range(frames):
 
 out = librosa.istft(mag * phase, n_fft=NFFT, win_length=win_length, hop_length=hop_length, window='hann')
 sf.write(out_path, out, sr)
-
-# diff
